@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".page">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -72,7 +72,7 @@
         tools:layout_editor_absoluteY="500dp" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btn_pagemove"
         android:layout_width="81dp"
         android:layout_height="84dp"
         app:srcCompat="@android:drawable/ic_media_play"
