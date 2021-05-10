@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
@@ -28,55 +29,64 @@
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="363dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="109dp"
-        android:layout_height="119dp"
-        android:gravity="center"
-        android:hint="00"
-        android:textColor="#000000"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="422dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="54dp"
-        android:layout_height="121dp"
-        android:gravity="center"
-        android:text="쪽"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="422dp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="109dp"
+            android:layout_height="119dp"
+            android:gravity="center"
+            android:hint="00"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="422dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="39dp"
-        android:layout_height="43dp"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="422dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="39dp"
-        android:layout_height="43dp"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="500dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="54dp"
+            android:layout_height="121dp"
+            android:gravity="center"
+            android:text="쪽"
+            android:textSize="36sp"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="422dp" />
 
-    <ImageButton
-        android:id="@+id/btn_pagemove"
-        android:layout_width="81dp"
-        android:layout_height="84dp"
-        app:srcCompat="@android:drawable/ic_media_play"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="443dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="39dp"
+                android:layout_height="43dp"
+                app:srcCompat="@android:drawable/arrow_up_float"
+                tools:layout_editor_absoluteX="251dp"
+                tools:layout_editor_absoluteY="422dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="39dp"
+                android:layout_height="43dp"
+                app:srcCompat="@android:drawable/arrow_down_float"
+                tools:layout_editor_absoluteX="251dp"
+                tools:layout_editor_absoluteY="500dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_pagemove"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            app:srcCompat="@android:drawable/ic_media_play"
+            tools:layout_editor_absoluteX="302dp"
+            tools:layout_editor_absoluteY="443dp" />
+    </LinearLayout>
+
+</LinearLayout>
